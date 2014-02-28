@@ -127,11 +127,17 @@ void netSetNetworkTopology(linkArrayType * linkArray)
 linkArray->link[0].uniPipeInfo.physIdSrc = 0;
 linkArray->link[0].uniPipeInfo.physIdDst = 1;
 linkArray->link[1].uniPipeInfo.physIdSrc = 1;
-linkArray->link[1].uniPipeInfo.physIdDst = 2;
+linkArray->link[1].uniPipeInfo.physIdDst = 0;
 
-// additions
-linkArray->link[2].uniPipeInfo.physIdSrc = 2;
-linkArray->link[2].uniPipeInfo.physIdDst = 0;
+linkArray->link[2].uniPipeInfo.physIdSrc = 1;
+linkArray->link[2].uniPipeInfo.physIdDst = 2;
+linkArray->link[3].uniPipeInfo.physIdSrc = 2;
+linkArray->link[3].uniPipeInfo.physIdDst = 1;
+
+linkArray->link[4].uniPipeInfo.physIdSrc = 2;
+linkArray->link[4].uniPipeInfo.physIdDst = 0;
+linkArray->link[5].uniPipeInfo.physIdSrc = 0;
+linkArray->link[5].uniPipeInfo.physIdDst = 2;
 }
 
 /*
