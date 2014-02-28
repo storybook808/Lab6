@@ -10,6 +10,7 @@ typedef struct { /* State of host */
    int   maindirvalid;        /* indicates if the main directory is empty */
    int   netaddr;             /* host's network address */
    int   nbraddr;             /* network address of neighbor */
+   int	 rcvflag;
    packetBuffer sendPacketBuff;  /* send packet buffer */
    packetBuffer rcvPacketBuff;   
    managerLink manLink;       /* Connection to the manager */
